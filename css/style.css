@@ -1,0 +1,44 @@
+/* group with same css style */
+
+form button:hover ,.bookmarkControlPanel a:hover ,.bookmarkControlPanel button:hover{
+    box-shadow: 2px 5px 3px 0px #888;
+}
+/* group with same css style */
+
+                            /* line */
+header::after , footer::before{
+    content: "";
+    border: 1px solid #999;
+    width: 90%;
+    left: 5%;
+    position: absolute;
+} 
+header::after{
+    bottom: 0;
+}
+footer::before{
+    top: 0;
+}
+                        /* line */
+                                                /* bookmarker form*/
+#bookmarkForm>div{
+    background-color: #eee;
+}
+#errorSiteName , #errorSiteUrl , #errorValidUrl{
+    background-color: #ffb2b2;
+    border: 1px solid #6d0000;
+}
+#errorSiteName::placeholder ,   #errorSiteUrl::placeholder ,#errorValidUrl::placeholder{
+    color: #6d0000;
+} 
+form button:hover{
+    background-color: #0a3f77;
+    border: 1px solid #0a3f77;
+}
+                                            /* bookmarker form*/
+                        /* displayed data*/
+.bookmarkRow{
+    background: rgb(238,238,238);
+    background: linear-gradient(180deg, rgba(238,238,238,1) 35%, rgba(255,255,255,1) 61%);
+}
+                        /* displayed data*/

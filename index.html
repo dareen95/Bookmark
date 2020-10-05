@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="bg-dark" >
+<!-- start header section--> 
+   <header class=" p-4 position-relative mb-2">
+        <div class="container">
+            <h1 class="text-capitalize text-secondary ">Bookmarker</h1>
+        </div>
+    </header>
+<!-- end header section--> 
+
+<!-- start form section--> 
+    <section id="bookmarkForm" class="">
+        <div class="container text-center ">
+            <form class="col-10 m-auto py-4">
+                <h2 class="py-2">Bookmark your favorite sites</h2>
+                <div class="form-group py-2">
+                  <label for="siteName">Site Name</label>
+                  <input type="text" class="form-control" id="siteName" placeholder="bookmark name" >
+                  <input id="errorSiteName" class="form-control errorAlert font-weight-bolder text-center mt-1" type="text" placeholder="Please enter your site name" readonly>
+                </div>
+                <div class="form-group py-2">
+                  <label for="siteUrl">Site URL</label>
+                  <input type="text" class="form-control" id="siteUrl" placeholder="website url">
+                  <input id="errorSiteUrl" class="form-control errorAlert font-weight-bolder text-center mt-1" type="text" placeholder="Please enter your site URL" readonly>
+                  <textarea id="errorValidUrl"  rows="5" class="form-control errorAlert font-weight-bolder mt-1"placeholder="website url : enter a valid url" readonly>
+                    please : enter a valid url
+                    https://www.example.com  OR http://www.example.com             
+                    www.example.com          OR example.com
+                    http://blog.example.com
+                    http://www.example.com/product
+                    http://www.example.com/products?id=1&page=2
+                    http://www.example.com#up
+                    http://255.255.255.255   OR 255.255.255.255
+                    http://www.site.com:8008
+                  </textarea>
+                </div>
+                <button id="add" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </section>
+<!--  end form section--> 
+
+<!-- start displayed data section--> 
+    <section id="bookmarkData" class="py-4">
+       <div class="container d-flex flex-column align-items-center">
+          
+       </div>
+    </section>
+<!-- end displayed data section--> 
+
+<!-- start footer section--> 
+    <footer class=" p-4 position-relative">
+        <div class="container">
+            <p class="lead text-secondary font-weight-bolder">&copy; 2020 Bookmarker AmrDawood.</p>
+         </div>
+    </footer>
+<!-- end footer section--> 
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bookmarkerScript.js"></script>    
+</body>
+</html>
